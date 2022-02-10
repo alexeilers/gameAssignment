@@ -4,6 +4,7 @@
     class Program
     {
 
+
         static void Main(string[] args)
         {    
                welcomeUser();     
@@ -49,7 +50,7 @@
             Console.WriteLine("To kick off our LabMid, you'll need to select a topic, or if you're feeling brave, you can select random and we'll pick a topic for you.");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine(" SELECT A NUMBER -- 1) Road Trip -- 2) Adam's Screaming Beagle -- 3) Mass Ave Massacre -- 4) Lost at the State Fair -- 5) Snowpocalypse -- 6) Random");
+            Console.WriteLine(" SELECT A NUMBER -- 1) Road Trip -- 2) The Screaming Beagle -- 3) Mass Ave Massacre -- 4) Lost at the State Fair -- 5) Snowpocalypse -- 6) Random");
             Console.Write("Which one would you like? ");
             string storyChoice = Console.ReadLine().ToLower();
             Console.Clear();
@@ -61,7 +62,7 @@
                 break; 
 
                 case "2":    
-                adamsBeagle();
+                screamingBeagle();
                 break;
             
                 case "3":
@@ -96,7 +97,7 @@
             Console.WriteLine("Roooooad triiiiiip!! Where are the snacks?");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("Alright, get ready - I'm about to ask you to come up with a bunch of good words to make the best freakin' road trip story ever. Let's go!");
+            Console.WriteLine("Alright, get ready - I'm about to ask you to come up with a bunch of good words to make the best road trip story ever. Let's go!");
             Console.ReadLine();
             Console.Clear();
             Console.Write("PERSON: ");
@@ -111,6 +112,18 @@
             string vehicleOne = Console.ReadLine();
             Console.Clear();
 
+            Console.Write("FOOD: ");
+            string foodOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("ANOTHER FOOD: ");
+            string foodTwo = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("DRINK: ");
+            string drinkOne = Console.ReadLine();
+            Console.Clear();
+
             Console.Write("ANIMAL: ");
             string animalOne = Console.ReadLine();
             Console.Clear();
@@ -119,15 +132,64 @@
             string verbOne = Console.ReadLine();
             Console.Clear();
 
-            Console.WriteLine("Summer is finally here! So " + personOne + " and I are going to load up our " + adjOne + " " + vehicleOne + " and head toward the coast! Hopefully it's not a repeat of last year, when a " + animalOne + " " + verbOne + " all over our camping gear!");
+
+            Console.WriteLine("Summer is finally here! So " + personOne + " and I are going to load up our " + adjOne + " " + vehicleOne + " and head toward the coast! I packed lots of delicious snacks, like " + foodOne + ", " + foodTwo + ", and " + drinkOne + "." + " Hopefully it's not a repeat of last year, when a " + animalOne + " " + verbOne + " " + "all over our camping gear!");
 
         }
 
-        public static void adamsBeagle()
+        public static void screamingBeagle()
         {
             Console.WriteLine("Adam's screaming beagle. Oh man... I hope you brought ear plugs.");
             Console.ReadLine();
             Console.Clear();
+            Console.WriteLine("Alright, get ready - I'm about to ask you to come up with a bunch of good words to make the best story ever. Let's go!");
+            Console.ReadLine();
+            Console.Clear();
+            Console.Write("NAME: ");
+            string dogName = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("TYPE OF PERSON: ");
+            string personType = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("PLACE: ");
+            string placeOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("OBJECT: ");
+            string objectOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("DRINK: ");
+            string drinkOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("GREETING: ");
+            string greeting = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("CELEBRITY: ");
+            string celebrityOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("VERB: ");
+            string verbOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("ANOTHER VERB: ");
+            string verbTwo = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("ANIMAL: ");
+            string animalOne = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("NATURAL DISASTER: ");
+            string disaster = Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("Have you ever heard a screaming dog? Me either, until I met " + dogName + " the beagle. I should have known this dog was going to be different when I bought them from a " + personType + " in " + placeOne + ". " + "When we got home, we quickly settled in, and the beagle quickly fell asleep on my " + objectOne + ". " + "After a few hours, I thought I should wake up " + dogName + " and take them outside, because they drank a lot of " + drinkOne + " on the car ride home. I tried saying, 'Psssst, " + greeting + " ... Wake up...' Nothing. 'Hey buddy, " + celebrityOne + " is here! Wake up!!' Still nothing. So I finally decided to pick them up and take them outside, and that's when I heard it. A sound like no other. A shriek that made me " + verbOne + " and " + verbTwo + "." + "It sounded like a " + animalOne + " caught in a " + disaster + "!!!");
 
         }
 
@@ -163,7 +225,6 @@
 
         }
 
-        
 
     }
 }
