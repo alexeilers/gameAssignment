@@ -1,9 +1,7 @@
 ﻿namespace LabMids
 {
-
     class Program
     {
-
 
         static void Main(string[] args)
         {    
@@ -12,7 +10,9 @@
 
         public static void welcomeUser()
         {
-            Console.WriteLine("Welcome to LabMids! The copyright-dodging version of everyone's favorite fill-in-the-blank word game.");
+            Console.WriteLine("Welcome to LabMids! The copyright-dodging version of everyone's favorite fill-in-the-blank word game. \n\nPRESS ENTER TO BEGIN");
+            Console.ReadLine();
+            Console.Clear();
             Console.Write("First off, how would you like your name to appear in the LabMid Hall of Fame?: ");
             string userName = Console.ReadLine();
             Console.Clear();
@@ -30,10 +30,7 @@
             Console.WriteLine("So you probably already know the drill, but here's how LabMids works:");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("You'll select a topic, or we will select one for you...");
-            Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("From there, you'll be prompted to come up with different kinds of words like nouns, adjectives, verbs, etc...");
+            Console.WriteLine("First, you'll select a topic. From there, you'll be prompted to come up with different kinds of words like nouns, adjectives, verbs, etc...");
             Console.ReadLine();
             Console.Clear();
             Console.WriteLine("Once complete, we'll put it all together, and present you with your LabMid!");
@@ -71,6 +68,11 @@
 
                 case "4":
                 stateFair();
+                break;
+
+                default: 
+                Console.WriteLine("Sorry, I didn't get that. Please select a number between 1 and 4.");
+                choiceMenu();
                 break;
 
             }
@@ -355,8 +357,8 @@
 
         public static void gameOverScreen()
         {
-            Console.WriteLine("Well done! Come back again soon!");
-            Console.WriteLine("---------------------------------");
+            Console.WriteLine("Well done! Come back again soon!\n\n\n");
+            
             Console.WriteLine("COPYRIGHT 2022 EILERS ALBACETE LLC.");
         }
     }
